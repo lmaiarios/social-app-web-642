@@ -1,4 +1,5 @@
-import {useContext} from 'react'
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
 import UserContext from '../contexts/UserContext'
 import './Sidebar.css'
 
@@ -25,7 +26,7 @@ function Sidebar(){
                             {user.phone}
                         </span>
                         <span className="info-item">
-                            {user.city}, {user.country}
+                            <Link to={'/country/'+user.country.toLowerCase()}>{user.city}, {user.country}</Link>
                         </span>
                     </div>
                 </>

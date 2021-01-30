@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 import { Switch, Route, Link } from 'react-router-dom'
 import UserContext from './contexts/UserContext'
 import Home from './pages/home'
+import Country from './pages/country'
 import About from './pages/about'
+import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 import './App.css';
 
@@ -44,6 +46,7 @@ function App() {
   return (
     <div className="App">
       <UserContext.Provider value={{user, setUser}}>
+        <Navbar />
         <Sidebar />
 
         <div className="page-container">
@@ -51,6 +54,7 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
+            <Route path="/country/:country" component={Country}/>
           </Switch>
         </div>
       </UserContext.Provider>

@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    top: 0;
+    background-color: rgb(13, 121, 115);
+    z-index: 100;
+}
+
+.navbar a{
+    margin: 30px;
+    color: grey;
+    text-decoration: none;
+}

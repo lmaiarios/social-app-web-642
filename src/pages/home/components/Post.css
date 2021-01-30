@@ -12,15 +12,47 @@
     align-items: center;
 }
 
-.post-pic{
+.post-pic, .comment-pic{
     border-radius: 50%;
 }
 
-.post-name{
+.post-name, .comment-name{
     margin-left: 20px;
     font-weight: bold;
 }
 
 .post-body{
     padding: 20px;
+}
+
+.comment-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment-date{
+    color: grey;
+    font-size: small;
+}
+
+.comment-form{
+    padding: 20px;
+}
+
+.comment-text{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 14pt;
+}
+
+.comment-text:focus{
+    outline-width: 0;
+}
+
+.submit-comment{
+    background-color: rgb(123, 172, 236);
+    border-radius: 30%;
+    padding: 10px;
 }

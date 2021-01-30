@@ -1,12 +1,13 @@
 .sidebar{
     display: inline-flex;
+    top: 0;
     background-color: rgb(18, 126, 145);
     height: 100vh;
-    width: 20vw;
+    width: 25vw;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .profile-pic{
@@ -28,4 +29,9 @@
 
 .info-item{
     font-size: 14pt;
+}
+
+.info-item a{
+    text-decoration: none;
+    color: black;
 }

@@ -1,0 +1,11 @@
+.country-container{
+    display: flex;
+    position: relative;
+    top: 100px;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+}

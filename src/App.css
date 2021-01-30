@@ -1,6 +1,8 @@
 .page-container{
   display: inline-flex;
-  width: 80vw;
+  width: 75vw;
+  height: 100vh;
+  overflow-y: scroll;
   flex-direction: column;
   align-items: center;
 }

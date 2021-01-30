@@ -14,7 +14,7 @@ function Home(){
     },[])
     return(
         <div className="home">
-            {posts.map( post => <Post {...post} /> )}
+            {posts.map( (post, index) => <Post key={index} {...post} /> )}
         </div>
     )
 }
